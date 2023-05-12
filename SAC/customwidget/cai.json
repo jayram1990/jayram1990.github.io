@@ -1,0 +1,164 @@
+{
+  "id": "com.sap.sac.cai3",
+  "version": "0.0.2",
+  "name": "cai3",
+  "description": "CAI3",
+  "newInstancePrefix": "cai3",
+  "icon": "https:\/\/raw.githubusercontent.com\/SAP-Custom-Widget\/ChatGptWidget\/main\/icon.png",
+  "vendor": "Jayaraman",
+  "eula": "",
+  "license": "",
+  "imports": [
+    "input-controls"
+  ],
+  "webcomponents": [
+    {
+      "kind": "main",
+      "tag": "com-sap-sac-cai3",
+      "url": "https://jayram1990.github.io/SAC/customwidget/cai.js",
+      "integrity": "",
+      "ignoreIntegrity": true
+    },
+    {
+      "kind": "styling",
+      "tag": "com-sap-sac-cai3-aps",
+      "url": "https://jayram1990.github.io/SAC/customwidget/aps_cai.js",
+      "integrity": "",
+      "ignoreIntegrity": true
+    }
+  ],
+  "properties": {
+    "metadata": {
+      "type": "string",
+      "description": "For internal use",
+      "default": ""
+    },
+    "socketurl": {
+      "type": "string",
+      "description": "socketurl",
+      "default": ""
+    },
+    "channelid": {
+      "type": "string",
+      "description": "channelid",
+      "default": ""
+    },
+    "token": {
+      "type": "string",
+      "description": "token",
+      "default": ""
+    },
+    "preferences": {
+      "type": "string",
+      "description": "preferences",
+      "default": ""
+    },
+    "sessionid": {
+      "type": "string",
+      "description": "sessionid",
+      "default": ""
+    }
+  },
+  "methods": {
+    "getSocketURL": {
+      "returnType": "string",
+      "description": "Get socket url",
+      "parameters": [
+        
+      ],
+      "body": "return this.socketurl;"
+    },
+    "setSocketURL": {
+      "description": "Set socketurl",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "string",
+          "description": "The new socketurl"
+        }
+      ],
+      "body": "this.socketurl = value;"
+    },
+    "getChannelID": {
+      "returnType": "string",
+      "description": "Get channel id",
+      "parameters": [
+        
+      ],
+      "body": "return this.channelid;"
+    },
+    "setChannelID": {
+      "description": "Set channel id",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "string",
+          "description": "The new channelid"
+        }
+      ],
+      "body": "this.channelid = value;"
+    },
+    "getToken": {
+      "returnType": "string",
+      "description": "Get token",
+      "parameters": [
+        
+      ],
+      "body": "return this.token;"
+    },
+    "setToken": {
+      "description": "Set token",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "string",
+          "description": "The new token"
+        }
+      ],
+      "body": "this.token = value;"
+    },
+    "getPreferences": {
+      "returnType": "string",
+      "description": "Get preferences",
+      "parameters": [
+        
+      ],
+      "body": "return this.preferences;"
+    },
+    "setPreferences": {
+      "description": "Set preferences",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "string",
+          "description": "The new preferences"
+        }
+      ],
+      "body": "this.preferences = value;"
+    },
+    "getSessionID": {
+      "returnType": "string",
+      "description": "Get session id",
+      "parameters": [
+        
+      ],
+      "body": "return this.sessionid;"
+    },
+    "setSessionID": {
+      "description": "Set sessionid",
+      "parameters": [
+        {
+          "name": "value",
+          "type": "string",
+          "description": "The new sessionid"
+        }
+      ],
+      "body": "this.sessionid = value;"
+    }
+  },
+  "events": {
+    "onStart": {
+      "description": "Specify the SAC Script that shall be triggered when the process is started. You are doing good JAY."
+    }
+  }
+}
