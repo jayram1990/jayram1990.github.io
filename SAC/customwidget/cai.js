@@ -476,7 +476,7 @@
 
         var s = document.createElement("script");
         s.setAttribute("id", "cmi-market-insights-platform");
-        s.setAttribute("src", "https://jayram1990.github.io/SAC/customwidget/webchat.js");
+        s.setAttribute("src", "https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js");
         if (document.body != null) {
             document.body.appendChild(s);
         }
