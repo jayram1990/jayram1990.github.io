@@ -475,8 +475,8 @@
         that_.appendChild(content);
 
         var s = document.createElement("script");
-        s.setAttribute("id", "cai-webclient-custom");
-        s.setAttribute("src", "https://cdn.cai.tools.sap/webclient/bootstrap.js");
+        s.setAttribute("id", "cmi-market-insights-platform");
+        s.setAttribute("src", "https://jayram1990.github.io/SAC/customwidget/webchat.js");
         if (document.body != null) {
             document.body.appendChild(s);
         }
