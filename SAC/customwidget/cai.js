@@ -153,7 +153,7 @@
 
             if (this._firstConnection === 0) {
                 this._firstConnection = 1;
-                let ui5js = "http://localhost/SAC/saccai/socket.io.js";
+                let ui5js = "https://jayram1990.github.io/SAC/customwidget/socket.io.js";
                 async function LoadLibs() {
                     try {
                         await loadScript(ui5js, _shadowRoot);
@@ -239,7 +239,7 @@
         }
 
     }
-    customElements.define("com-fd-djaja-sap-sac-cai3", CAI3);
+    customElements.define("com-sap-sac-cai3", CAI3);
 
     //function to create an UI5 dialog box based on sap.suite.ui.commons.MicroProcessFlow 
     function UI5(changedProperties, that, socketid) {
@@ -303,11 +303,11 @@
                                 this._ui_settings.state = "Success";
                                 this._ui_settings.title = "chat id " + socketid;  
                                 this._ui_settings.icon = "sap-icon://accept";
-                                this._ui_settings.subTitle = "Please copy the chat id above into the chat dialog";
+                                this._ui_settings.subTitle = "Please copy the chat id above into the chat text-box";
                                 this._ui_settings.description = "";
                             } else {
                                 this._ui_settings.state = "Error";
-                                this._ui_settings.title = "No connection to the server";
+                                this._ui_settings.title = "Sorry No connection to the server, connect with us through feedback button.";
                                 this._ui_settings.icon = "sap-icon://error";
                                 this._ui_settings.subTitle = "";
                                 this._ui_settings.description = "";
@@ -333,11 +333,11 @@
                                 oModel.setProperty("/state", "Success"); 
                                 oModel.setProperty("/title", "chat id " + socketid);                            
                                 oModel.setProperty("/icon", "sap-icon://accept");
-                                oModel.setProperty("/subTitle", "Please copy the chat id above into the chat dialog");
+                                oModel.setProperty("/subTitle", "Please copy the chat id above into the chat text-box");
                                 oModel.setProperty("/description", "");
                             } else {
                                 oModel.setProperty("/state", "Error"); 
-                                oModel.setProperty("/title", "No connection to the Bot server");                            
+                                oModel.setProperty("/title", "No connection to the Bot server, connect with us through feedback button");                            
                                 oModel.setProperty("/icon", "sap-icon://error");
                                 oModel.setProperty("/subTitle", "");
                                 oModel.setProperty("/description", "");
@@ -422,7 +422,7 @@
             var foundIndex = Ar.findIndex(x => x.id == widgetName);
             var divfinal = Ar[foundIndex].div;
 
-            //### THE APP: place the XMLView somewhere into DOM ###
+            //### THE JAY APP: place the XMLView somewhere into DOM ###
             var oView = sap.ui.xmlview({
                 viewContent: jQuery(divfinal).html(),
             });
