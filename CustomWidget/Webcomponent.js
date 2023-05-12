@@ -79,7 +79,7 @@
       } = this._props || "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";
       const {
         max_tokens
-      } = this._props || 3000;
+      } = this._props || 1024;
       const generateButton = this.shadowRoot.getElementById("generate-button");
       generateButton.addEventListener("click", async () => {
         const promptInput = this.shadowRoot.getElementById("prompt-input");
@@ -90,7 +90,7 @@
           method: "POST",
           headers: {
             "Content-Type": "application/json",
-            "Authorization": "Bearer " + apiKey
+            "Authorization": "Bearer " + "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"
           },
           body: JSON.stringify({
             "model": "text-davinci-002",
