@@ -90,7 +90,7 @@
           method: "POST",
           headers: {
             "Content-Type": "application/json",
-            "Authorization": "Bearer " + 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
+            "Authorization": "Bearer " + apiKey
           },
           body: JSON.stringify({
             "model": "text-davinci-002",
