@@ -141,5 +141,5 @@
         }
     }
   //*JAY ends
-    customElements.define("com-sap-sac-cai3-aps", CAI3Aps);
+    customElements.define("co-sap-sac-cai3-aps", CAI3Aps);
 })();
